@@ -16,17 +16,18 @@ angular.module('vfApp', ['ui.router'])
       })
       .state('locations', {
         url: '/locations',
-        templateUrl: 'locationTemp.html',
+        templateUrl: 'views/locationTemp.html',
+        controller: 'mainCtrl',
 
       })
       .state('about', {
         url: '/about',
-        templateUrl: 'aboutTemp.html',
+        templateUrl: 'views/aboutTemp.html',
 
       })
       .state('career', {
         url: '/careers',
-        templateUrl: 'careerTemp.html',
+        templateUrl: 'views/careerTemp.html',
 
       })
 })

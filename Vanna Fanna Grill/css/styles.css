@@ -30,9 +30,25 @@ body {
 
 
 }
+.homeBack {
+  background-color:#0092d7;
+  height: 1000px;
+}
 .menuBack {
   background-color: #92dce0;
   height: 1000px;
+}
+.locationBack {
+  background-color: #ee8d09;
+  height: 1000px;
+}
+#map {
+  width: 500px;
+  height: 400px;
+  float: right;
+  margin-top: 25px;
+  margin-right: 25px;
+  border-radius: 10px;
 }
 .sidepic {
   height:100px;

@@ -5,7 +5,7 @@
   <link rel="stylesheet" href='css/styles.css' />
 
 </head>
-<body>
+<body ng-controller="mainCtrl">
   <header>
     <div class ='topHeader'>
       <img class = 'sidepic' src='img/palmtree.png' />
@@ -30,5 +30,8 @@
   <script type="text/javascript" src="https://cdn.firebase.com/libs/angularfire/1.1.4/angularfire.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
   <script type="text/javascript" src="app.js"></script>
+  <script type='text/javascript' src="controllers/mainCtrl.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+        async defer></script>
 </body>
 </html>
