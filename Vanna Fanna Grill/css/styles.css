@@ -1,0 +1,40 @@
+body {
+  background-color: white;
+}
+.topHeader {
+  width: 100%;
+  height: 165px;
+  background-color:white;
+  text-align: center;
+
+}
+.logoPic {
+}
+.headerMenu {
+  background-color: #92dce0;
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+
+
+}
+.menuBut {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  width: 18%;
+  height: 50px;
+  border-radius: 10px;
+  color:black;
+  margin: 10px;
+
+
+}
+.menuBack {
+  background-color: #92dce0;
+  height: 1000px;
+}
+.sidepic {
+  height:100px;
+  margin-bottom:33px;
+}
