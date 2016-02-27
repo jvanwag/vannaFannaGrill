@@ -1,7 +1,22 @@
-<div class="locationBack">
-  location ho hee ha hoo
-  <div id="map">
-    {{initMap()}}
-  </div>
+<div class='locationBack'>
+<div id="map"></div>
+<div id="picBox"><img class="locPic" ng-src='{{picSelector}}'>
+</div>
+<div class="listHolder">
+<header class='header'>
+  Locations
+</header>
+<div class='locLi'>
+<ul>
+
+<div id="class" ng-repeat="marker in markers | orderBy : 'title'">
+     <a href="#" ng-click="openInfoWindow($event, marker)"><li>{{marker.title}}-</li></a>
+<div id="descr">{{marker.description}}</br>Hours: {{marker.hour}}</br></div>
+</ul>
+</div>
+</div>
+
+</div>
+
 
 </div>

@@ -17,7 +17,7 @@ angular.module('vfApp', ['ui.router'])
       .state('locations', {
         url: '/locations',
         templateUrl: 'views/locationTemp.html',
-        controller: 'mainCtrl',
+        controller: 'mapCtrl',
 
       })
       .state('about', {

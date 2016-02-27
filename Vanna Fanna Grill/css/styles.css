@@ -38,19 +38,78 @@ body {
   background-color: #92dce0;
   height: 1000px;
 }
+.header {
+  font-weight: bold;
+  font-size: 5vh;
+  font-family: cursive;
+}
 .locationBack {
   background-color: #ee8d09;
-  height: 1000px;
+  height: 1100px;
+  border-radius: 10px;
+}
+.listHolder {
+  width: 50%;
+  text-align:center;
+  height: 90%;
+  padding-top: 20px;
+  position: relative;
+  background-color: none;
+}
+.locLi {
+  width:70%;
+  background-color: #3ec303;
+  text-align:left;
+  position:absolute;
+  left:70px;
+  border-color: black;
+  border-style: solid;
+  border-radius: 20px;
+  padding-right: 25px;
+
+}
+#class {
+  font-size: 3vh;
+  margin-top: 15px;
+  font-family: cursive;
+  list-style-type: none;
+
+}
+#descr {
+  font-size: 2vh;
 }
 #map {
   width: 500px;
   height: 400px;
   float: right;
-  margin-top: 25px;
-  margin-right: 25px;
+  margin-top: 70px;
+  margin-right: 70px;
   border-radius: 10px;
+  border-style: solid;
+}
+#picBox {
+ width:500px;
+ height:400px;
+ background-color: black;
+ float:right;
+ margin-top:50px;
+ margin-left: 500px;
+ margin-right: 70px;
+ border-radius:10px;
+ border-style: solid;
+}
+.locPic {
+  height:400px;
+  width:500px;
+  border-radius: 5px;
+  z-index: 2;
 }
 .sidepic {
   height:100px;
   margin-bottom:33px;
+}
+.infoWindowContent {
+    font-size:  14px !important;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
 }
