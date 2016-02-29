@@ -86,7 +86,7 @@ angular.module('vfApp')
         marker.content = '<div class="infoWindowContent">' + info.desc + '</div>';
 
         google.maps.event.addListener(marker, 'click', function(){
-            infoWindow.setContent('<h2>' + marker.title + '</h2>' + marker.content + info.hours + info.pic);
+            infoWindow.setContent('<h2>' + marker.title + '</h2>' + marker.content + info.hours);
             infoWindow.open($scope.map, marker);
         });
 

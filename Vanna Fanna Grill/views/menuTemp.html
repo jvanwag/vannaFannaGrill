@@ -1,3 +1,33 @@
 <div class='menuBack'>
-hobbitses
+  <header class='header'>
+    Menu
+  </header>
+  <div class="menuLi">
+    <header class='header' style="text-align:center">
+      Appetizers
+    </header>
+
+
+<div id='class2' ng-repeat='item in getApps'>
+  <img class="dinPic" src={{item.img}} />
+  <div><strong>{{item.name}}:</strong>{{item.desc}}</div>{{item.price}}
+
+</div>
+  <header class="header" style="text-align:center">
+    Entree
+  </header>
+  <div id='class2' ng-repeat='item in getEntree'>
+    <img class="dinPic" src={{item.img}} />
+    <div><strong>{{item.name}}:</strong>{{item.desc}}</div>{{item.price}}
+
+</div>
+<header class="header" style="text-align:center">
+  Dessert
+</header>
+<div id='class2' ng-repeat='item in getDessert'>
+  <img class="dinPic" src={{item.img}} />
+  <div><strong>{{item.name}}:</strong>{{item.desc}}</div>{{item.price}}
+
+</div>
+</div>
 </div>

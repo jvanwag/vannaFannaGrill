@@ -2,16 +2,19 @@ angular.module('vfApp', ['ui.router'])
 
 .config(function($stateProvider, $urlRouterProvider, $httpProvider) {
 
+  $urlRouterProvider.otherwise('/');
 
       $stateProvider
       .state('home', {
         url: '/',
         templateUrl: 'views/homeTemp.html',
+        controller: 'mainCtrl',
 
       })
       .state('menu', {
         url: '/menu',
         templateUrl:'views/menuTemp.html',
+        controller: 'mainCtrl',
 
       })
       .state('locations', {

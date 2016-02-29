@@ -27,16 +27,32 @@ body {
   border-radius: 10px;
   color:black;
   margin: 10px;
+  font-family: cursive;
 
 
 }
 .homeBack {
   background-color:#0092d7;
   height: 1000px;
+  text-align: center;
+}
+.scrollPic {
+  margin-top: 25px;
+  height: 500px;
+  width: 90%;
+  border-style:solid;
+  margin-top: 10px;
+
 }
 .menuBack {
+  background: url('../img/background-food.jpg');
+  background-position:center;
+  background-size: cover;
   background-color: #92dce0;
-  height: 1000px;
+  height: 135vh;
+  text-align: center;
+  width: 100%;
+  border-radius: 10px;
 }
 .header {
   font-weight: bold;
@@ -44,8 +60,11 @@ body {
   font-family: cursive;
 }
 .locationBack {
+  background: url('../img/blue-sky.jpg');
+  background-position:center;
+  background-size: cover;
   background-color: #ee8d09;
-  height: 1100px;
+  height: 135vh;
   border-radius: 10px;
 }
 .listHolder {
@@ -68,11 +87,47 @@ body {
   padding-right: 25px;
 
 }
+.menuLi {
+  overflow-y: scroll;
+  height:90%;
+  margin: auto;
+  width:70%;
+  background-color: #3ec303;
+  text-align:left;
+  border-color: black;
+  border-style: solid;
+  border-radius: 20px;
+  padding-right: 25px;
+}
+.dinPic {
+  height: 150px;
+  width: 180px;
+  border-style:solid;
+  float: right;
+  margin-top: 10px;
+
+}
+
+#class2 {
+  font-size: 3vh;
+  margin-top: 20px;
+  font-family: cursive;
+  list-style-type: none;
+  height: 200px;
+  border-bottom: solid;
+  border-bottom-width: thin;
+  width:80%;
+  margin: auto;
+}
+
 #class {
   font-size: 3vh;
   margin-top: 15px;
   font-family: cursive;
   list-style-type: none;
+  border-bottom: solid;
+  border-bottom-width: thin;
+
 
 }
 #descr {
