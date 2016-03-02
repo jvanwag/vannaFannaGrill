@@ -67,8 +67,8 @@ angular.module('vfApp').service('menuSrv', function(){
       img: '../img/chock-cake.jpg'
     },
     {
-      name: 'Buntd Cakes',
-      desc: "Delicious Buntd Cakes delivered to us directly from 'Nothing Bundt Cakes'",
+      name: 'Bundt Cakes',
+      desc: "Delicious Bundt Cakes delivered to us directly from 'Nothing Bundt Cakes'",
       price: '$4',
       img: '../img/bundtlets.jpg'
     },

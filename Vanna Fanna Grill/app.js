@@ -1,5 +1,7 @@
-angular.module('vfApp', ['ui.router'])
-
+angular.module('vfApp', ['ui.router', 'firebase'])
+.constant('fb', {
+  url: 'https://vanna-fanna.firebaseio.com/'
+})
 .config(function($stateProvider, $urlRouterProvider, $httpProvider) {
 
   $urlRouterProvider.otherwise('/');
@@ -26,11 +28,23 @@ angular.module('vfApp', ['ui.router'])
       .state('about', {
         url: '/about',
         templateUrl: 'views/aboutTemp.html',
+        controller: 'careerCtrl',
+        resolve: {
+    careerRef: function(careerSrv){
+      return careerSrv.getCareers()
+    },
+  }
 
       })
       .state('career', {
         url: '/careers',
         templateUrl: 'views/careerTemp.html',
+        controller: 'careerCtrl',
+        resolve: {
+    careerRef: function(careerSrv){
+      return careerSrv.getCareers()
+    }
+    },
 
       })
 })

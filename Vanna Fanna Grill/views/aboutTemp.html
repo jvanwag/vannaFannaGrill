@@ -1,0 +1,26 @@
+<div class="aboutBack">
+  <header class='header' style="color:white">
+    About Us
+  </header>
+</br>
+  <header class='header' style="color:white">
+    Master Chefs
+  </header>
+  <img class="aboutPic" src='../img/family.png'} />
+
+  <header class='header' style="color:white">
+    Junior Chefs
+  </header>
+  <ul>
+      <li class="newHireLi" ng-repeat="thread in careers">
+              <span class="newHire"><strong>Name: {{ thread.name }}</strong></span>
+            </br>
+              <span class="newHire"><strong>About: </strong>{{ thread.about }}</span>
+            </br>
+              <span class="newHire"><strong>Favorite Food: </strong> {{thread.food }}</span>
+            </br>
+            <button ng-click="fireEmp(thread)">Fire</button>
+          </a>
+      </li>
+  </ul>
+</div>

@@ -3,9 +3,10 @@
 <head>
   <title>Vanna Fanna Grill - Suburban Cookings Finest</title>
   <link rel="stylesheet" href='css/styles.css' />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 </head>
-<body ng-controller="mainCtrl">
+<body ng-controller='buttonCtrl'>
   <header>
     <div class ='topHeader'>
       <img class = 'sidepic' src='img/palmtree.png' />
@@ -13,15 +14,21 @@
       <img class = 'sidepic' src='img/palmtree.png' />
     </div>
     <div class = 'headerMenu'>
-      <button ui-sref='home' class = 'menuBut' style="background-color:#0092d7">Home</button>
-      <button ui-sref='menu' class = 'menuBut' style="background-color:#3ec303">Menu</button>
+      <!-- <button ui-sref='home' class = 'menuBut' style="background-color:#0092d7">Home</button> -->
+      <button-dir destination='desthome' butname='butHome' styleb = 'bstyle'></button-dir>
+      <button-dir destination='destmenu' butname='butMenu' styleb = 'gstyle'></button-dir>
+      <button-dir destination='destloc' butname='butLoc' styleb = 'ostyle'></button-dir>
+      <button-dir destination='destabout' butname='butAbout' styleb = 'gstyle'></button-dir>
+      <button-dir destination='destcareer' butname='butCareer' styleb = 'bstyle'></button-dir>
+      <!-- <button ui-sref='menu' class = 'menuBut' style="background-color:#3ec303">Menu</button>
       <button ui-sref='locations' class = 'menuBut' style="background-color:#ee8d09">Locations</button>
       <button ui-sref='about' class = 'menuBut' style="background-color:#3ec303">About Us</button>
-      <button ui-sref='career' class = 'menuBut' style="background-color:#0092d7">Careers</button>
+      <button ui-sref='career' class = 'menuBut' style="background-color:#0092d7">Careers</button> -->
 
     </div>
   </header>
   <div ui-view></div>
+  <footy></footy>
 
 
 
@@ -35,5 +42,10 @@
   <script type="text/javascript" src='controllers/mapCtrl.js'></script>
   <script type="text/javascript" src='services/menuService.js'></script>
   <script type="text/javascript" src='services/homeService.js'></script>
+  <script type="text/javascript" src='directives/footerDirective.js'></script>
+  <script type='text/javascript' src='services/careerService.js'></script>
+  <script type='text/javascript' src='controllers/careerCtrl.js'></script>
+  <script type="text/javascript" src='directives/buttonDirective.js'></script>
+  <script type='text/javascript' src='controllers/buttonCtrl.js'></script>
 </body>
 </html>

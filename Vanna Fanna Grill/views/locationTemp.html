@@ -10,7 +10,7 @@
 <ul>
 
 <div id="class" ng-repeat="marker in markers | orderBy : 'title'">
-     <a href="#" ng-click="openInfoWindow($event, marker)"><li>{{marker.title}}-</li></a>
+     <a style = 'color:#fef7da' href="#" ng-click="openInfoWindow($event, marker)"><li>{{marker.title}}-</li></a>
 <div id="descr">{{marker.description}}</br>Hours: {{marker.hour}}</br></div>
 </ul>
 </div>

@@ -11,6 +11,7 @@ body {
 .logoPic {
 }
 .headerMenu {
+  background: url('../img/leaf2.jpg');
   background-color: #92dce0;
   width:100%;
   display: flex;
@@ -22,33 +23,52 @@ body {
   font-size: 20px;
   font-weight: bold;
   text-align: center;
-  width: 18%;
+  /*width: 18%;*/
+  width:200px;
   height: 50px;
   border-radius: 10px;
   color:black;
   margin: 10px;
   font-family: cursive;
+  margin-right: 25px;
+  margin-left:25px;
 
 
 }
 .homeBack {
+  border-radius: 10px;
   background-color:#0092d7;
   height: 1000px;
   text-align: center;
 }
+.slidePic {
+  position: relative;
+}
 .scrollPic {
-  margin-top: 25px;
   height: 500px;
   width: 90%;
   border-style:solid;
-  margin-top: 10px;
+  margin-top: 30px;
+  z-index: 1;
+}
+#birthday {
+  color:white;
+}
+.innerWords {
+  position: absolute;
+  left:100px;
+  top:50px;
+  z-index: 2;
+  font-family: cursive;
+  font-weight: bold;
+  font-size: 4vh;
 
 }
+
 .menuBack {
   background: url('../img/background-food.jpg');
   background-position:center;
   background-size: cover;
-  background-color: #92dce0;
   height: 135vh;
   text-align: center;
   width: 100%;
@@ -63,8 +83,7 @@ body {
   background: url('../img/blue-sky.jpg');
   background-position:center;
   background-size: cover;
-  background-color: #ee8d09;
-  height: 135vh;
+  height: 1300px;
   border-radius: 10px;
 }
 .listHolder {
@@ -77,12 +96,13 @@ body {
 }
 .locLi {
   width:70%;
-  background-color: #3ec303;
+  background-color: #29398e;
   text-align:left;
   position:absolute;
   left:70px;
   border-color: black;
   border-style: solid;
+  border-width: thin;
   border-radius: 20px;
   padding-right: 25px;
 
@@ -92,7 +112,7 @@ body {
   height:90%;
   margin: auto;
   width:70%;
-  background-color: #3ec303;
+  background-color: #0092d7;
   text-align:left;
   border-color: black;
   border-style: solid;
@@ -127,6 +147,7 @@ body {
   list-style-type: none;
   border-bottom: solid;
   border-bottom-width: thin;
+  color:white;
 
 
 }
@@ -148,7 +169,7 @@ body {
  background-color: black;
  float:right;
  margin-top:50px;
- margin-left: 500px;
+ margin-left: 700px;
  margin-right: 70px;
  border-radius:10px;
  border-style: solid;
@@ -167,4 +188,84 @@ body {
     font-size:  14px !important;
     border-top: 1px solid #ccc;
     padding-top: 10px;
+}
+.aboutBack {
+  background: url('../img/wood_background.jpg');
+  border-radius: 10px;
+  background-color: #0092d7;
+  width:100%;
+  height:1500px;
+  text-align: center;
+}
+.aboutPic {
+  height: 550px;
+  width: 800px;
+  border-style:solid;
+  margin-top: 30px;
+  z-index: 1;
+}
+.footer {
+  background-color:#92dce0;
+  width:100%;
+  height: 50px;
+  text-align: center;
+  border-radius: 10px
+}
+.link1 {
+  font-weight: bold;
+  float:left;
+  margin-left: 5%;
+  font-family: cursive;
+  color:black;
+  text-decoration: none;
+  font-size: 3vh;
+
+}
+.link2 {
+  font-weight: bold;
+  margin-right:14%;
+  margin-left: 14%;
+  font-family: cursive;
+  color:black;
+  text-decoration: none;
+  font-size: 3vh;
+
+
+}
+.link3 {
+  font-weight: bold;
+  float:right;
+  font-family: cursive;
+  color:black;
+  margin-right: 5%;
+  text-decoration: none;
+  font-size: 3vh;
+
+}
+.careerPage {
+  background-color: #0092d7;
+  text-align: center;
+  height: 1000px;
+  border-radius: 10px;
+}
+.newHire {
+  font-family:cursive;
+  list-style: none;
+}
+.newHireLi {
+  list-style: none;
+  margin-bottom:25px;
+  background-color:#0092d7;
+  float: left;
+  margin-left: 15px;
+  margin-right: 15px;
+  border-style: solid;
+  border-width: thin;
+  padding:20px;
+}
+.header2 {
+  font-size: 4vh;
+  font-family: cursive;
+  margin-bottom: 25px;
+  margin-top:25px;
 }

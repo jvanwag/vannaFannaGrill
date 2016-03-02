@@ -1,0 +1,27 @@
+<div class="careerPage">
+    <header class="header">Careers</header>
+    <p class="header2">
+      Apply Below
+    </p>
+
+    <form name="newCareerForm">
+        <input type="text" ng-model="name" placeholder="name..." required/>
+        <input type="text" ng-model="newCareer" placeholder="Tell us about yourself..." required/>
+        <input type="text" ng-model="food" placeholder="What is your favorite food to cook?" required/>
+        <button ng-disabled="newCareerForm.$invalid" ng-click="createCareer(name, newCareer, food)">Apply</button>
+    </form>
+<div class="header2">
+  New Hires
+</div>
+    <ul>
+        <li class="newHireLi" ng-repeat="thread in careers">
+                <span class="newHire"><strong>Name: {{ thread.name }}</strong></span>
+              </br>
+                <span class="newHire"><strong>About: </strong>{{ thread.about }}</span>
+              </br>
+                <span class="newHire"><strong>Favorite Food: </strong> {{thread.food }}</span>
+              </br>
+                <button ng-click="fireEmp(thread)">Fire</button>
+        </li>
+    </ul>
+</div>

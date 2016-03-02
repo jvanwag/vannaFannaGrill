@@ -1,6 +1,9 @@
 <div class='homeBack'>
-  <div class='slidePic' ng-click='scrollPic(getScrollingPic)'>
-    <img class="scrollPic"  ng-click='scrollPic(getScrollingPic)' src={{getScrollingPic[picCount]}} />
-
+  <div class='slidePic'>
+    <img class="scrollPic" ng-click='scrollPic(scrollingPic)'
+     ng-src={{picture.img}} />
+   <div class = 'innerWords' id={{getScrollingPic[picCount].style}}>
+     {{getScrollingPic[picCount].desc}}
+   </div>
   </div>
 </div>
