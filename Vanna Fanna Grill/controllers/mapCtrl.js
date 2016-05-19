@@ -5,7 +5,7 @@ var cities = [
         lat : 30.267153,
         long : -97.7430608,
         hours : '8AM-11PM',
-        pic : '../img/downtown_Austin.jpg'
+        pic : '../img/downtown_austin.jpg'
     },
     {
         city : 'Provo',
@@ -13,7 +13,7 @@ var cities = [
         lat : 40.2338438,
         long : -111.6585337,
         hours : '8AM-11PM',
-        pic : '../img/Downtown_provo.jpg'
+        pic : '../img/downtown_provo.jpg'
     },
     {
         city : 'Chicago',
@@ -37,7 +37,7 @@ var cities = [
         lat : 38.8951118,
         long : -77.0363658,
         hours : '8AM-11PM',
-        pic: '../img/washingtonDC.jpe'
+        pic: '../img/washingtondc.jpe'
     },
     {
       city : 'Eugene',

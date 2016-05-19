@@ -32,8 +32,8 @@ angular.module('vfApp', ['ui.router', 'firebase'])
         resolve: {
     careerRef: function(careerSrv){
       return careerSrv.getCareers()
-    },
-  }
+    }
+  },
 
       })
       .state('career', {
@@ -46,5 +46,5 @@ angular.module('vfApp', ['ui.router', 'firebase'])
     }
     },
 
-      })
+  })
 })

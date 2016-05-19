@@ -2,16 +2,14 @@ angular.module('vfApp').service('homeSrv', function(){
 
   var pics = [
     {
-    img: '../img/cheese_crunchy.jpg',
-    desc:'World Famous Cheese Crunchies!!'
-  },
+      img: '../img/florianopolis.jpg',
+      desc: "Now open in Brazil!!",
+    },
   {
     img: '../img/kitchen.jpg',
+    desc:'State of the art kitchens!'
 },
-{
-  img: '../img/florianopolis.jpg',
-  desc: "Now open in Brazil!!",
-},
+
 {
   img: '../img/kids.jpe',
   desc: "Kids eat free all day, every day!!!!",
